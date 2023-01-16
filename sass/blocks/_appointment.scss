@@ -1,0 +1,33 @@
+.appointment {
+    padding: 130px 0 210px;
+    background: url('./../img/appointment/blob.png') 117px center/auto no-repeat, url('./../img/appointment/circles.svg') 100px 239px/auto no-repeat, url('./../img/appointment/bg.png') center/cover  no-repeat;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__header{
+        width: 324px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__title {
+        margin-bottom: 46px;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    &__count {
+        margin-bottom: 46px;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 56px;
+    }
+    &__customer {
+        font-weight: 900;
+        font-size: 19px;
+        line-height: 26px;
+    }
+}

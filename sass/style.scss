@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import './base/variables';
+@import './base/mixins';
+@import './blocks/promo';
+@import './blocks/header';
+@import './blocks/hamburger';
+@import './blocks/buttons';
+@import './blocks/nav';
+@import './blocks/about';
+@import './blocks/titles';
+@import './blocks/promise';
+@import './blocks/video';
+@import './blocks/services';
+@import './blocks/appointment';
+@import './blocks/forms';
+@import './blocks/gallery';
+@import './blocks/customer';
+@import './blocks/impact';
+@import './blocks/footer';
+@import './base/medias';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 1020px;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.wrapper {
+    padding-bottom: 175px;
+    background-color: $block-grey;
+    background-image: url('./../img/wrapper-blob.png');
+    background-position: 0 -264px;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}

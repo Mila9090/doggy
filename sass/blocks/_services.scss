@@ -1,0 +1,42 @@
+.services {
+    padding-top: 110px;
+    padding-bottom: 114px;
+    background-color: $block-grey;
+    background-image: url('./../img/services/blob.png');
+    background-position: 100% -375px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    h2 {
+        margin-bottom: 78px;
+    } 
+    &__items{
+        margin-bottom: 66px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+        grid-auto-rows: 340px;
+        justify-content: center;
+        gap: 24px;
+        text-align: center;
+    }
+    &__item {
+        padding: 50px 44px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        &_active{
+            filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+        }
+    }
+    &__icon{
+        margin-bottom: 33px;
+    }
+    &__subtitle {
+        @include subtitle;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: #4B4B4B;
+    }
+}

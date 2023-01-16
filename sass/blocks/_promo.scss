@@ -1,0 +1,15 @@
+.promo {
+    width: 100%;
+    height: 100vh;
+    padding-top: 26px;
+    background: url('./../img/promo/promo.jpg') center/cover no-repeat;
+    &__header {
+        width: 583px;
+        margin-top: 126px;
+        margin-bottom: 40px;
+        font-weight: 900;
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,62 @@
+.impact {
+    background: url('./../img/impact/blob.png') 85% 0/auto no-repeat, url('./../img/impact/bg.png') center/ cover no-repeat;
+    .container {
+        padding-top: 112px;
+        padding-bottom: 212px;
+        position: relative;
+    }
+    .title-item {
+        width: 411px;
+        margin-bottom: 79px;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image {
+        position: absolute;
+        right: 0;
+        top: -45px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    &__count {
+        @include title;
+        margin-bottom: 3px;
+    }
+    &__descr {
+        @include font16;
+        color: #5D62B5;
+    }
+    &__appointment {
+        padding: 43px 76px 46px 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: $block-color;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+    }
+    &__subtitle {
+        width: 526px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+}

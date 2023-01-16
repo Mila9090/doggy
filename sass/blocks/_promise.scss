@@ -1,0 +1,26 @@
+.promise {
+    margin-top: 850px;
+    margin-bottom: 122px;
+
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    &__item {
+        flex-basis: 324px;
+        display: flex;
+        gap: 23px;
+    }
+    &__subtitle {
+        @include subtitle;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: #4B4B4B;
+    }
+}

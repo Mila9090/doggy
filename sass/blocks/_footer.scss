@@ -1,0 +1,97 @@
+.footer {
+    padding-top: 160px;
+    background-color: $block-grey;
+    &__items {
+        margin-bottom: 98px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.15px;
+        font-weight: 400;
+        color: #4B4B4B;
+    }
+    &__items {
+        &:nth-child(2) {
+            flex-shrink: 4;
+        }
+    }
+    &__logo {
+        margin-bottom: 23px;
+    }
+    &__descr {
+        width: 235px;
+        margin-bottom: 33px;
+    }
+    &__socials {
+        display: flex;
+        gap: 18px;
+    }
+    &__social {
+        transition: .2s all;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        margin-bottom: 28px;
+    }
+    &__links {
+        width: 357px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        li {
+            width: 159px;
+            margin-bottom: 11px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: 700;
+        color: #4B4B4B;
+        transition: .3s all;
+        &:hover {
+            text-decoration: underline;
+            color: #4B4B4B;
+        }
+    }
+    &__contact {
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+    }
+    &__img {
+        padding-top: 3px;
+    }
+    &__data {
+        width: 200px;
+    }
+    &__info {
+        padding: 24px 0 19px;
+        background-color: $block-color;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.15px;
+        color: #FFFFFF;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+    &__right {
+        margin-left: 10px;
+        span {
+            margin-left: 10px;
+            font-weight: 700;
+        }
+    }
+}

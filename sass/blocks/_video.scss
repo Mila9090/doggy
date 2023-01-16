@@ -1,0 +1,13 @@
+.video {
+    padding: 112px 210px 377px 0;
+    background: url('./../img/video/bg.png') center/100vw auto no-repeat;
+    &__wrapper {
+        width: 411px;
+        position: absolute;
+        right: 230px;
+    }
+    &__title {
+        margin-bottom: 42px;
+        @include title;
+    }
+}

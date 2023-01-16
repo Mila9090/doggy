@@ -1,0 +1,30 @@
+.customer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    &__title {
+        width: 324px;
+    }
+    &__item {
+        width: 324px;
+        padding: 50px 44px 40px 43px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    &__review {
+        @include font16;
+        color: #4B4B4B;
+        margin-bottom: 18px;
+    }
+    &__data {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+    }
+    &__name {
+        @include font16;
+        font-weight: 700;
+        color: $main-color;
+    }
+}

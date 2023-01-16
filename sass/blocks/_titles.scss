@@ -1,0 +1,28 @@
+.title-item{
+    &__before{
+        margin-bottom: 33px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: #F5F5F5;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        color: #FFFFFF;
+        margin-bottom: 36px;
+    }
+    &__purple{
+        color: #5D62B5;
+    }
+    &__black{
+        color: #000;
+        margin-bottom: 68px;
+    }
+}
