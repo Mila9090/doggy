@@ -160,6 +160,9 @@
 }
 @media (max-width: 898px) {
     .form {
+        &__flex{
+            gap: 5px;
+        }
         &__item {
             flex-grow: 1;
         }
@@ -287,9 +290,6 @@
 @media (max-width: 625px) {
     .promo__header {
         width: 100%;
-    }
-    .form__flex{
-        gap: 5px;
     }
     .footer{
         &__links {
