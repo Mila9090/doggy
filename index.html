@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doggy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -72,7 +73,7 @@
                         <img src="./icons/header/search.svg" alt="Search">
                     </div>
                     <div class="menu__cart">
-                        <img src="./icons/header/cart.svg" alt="Cart">
+                        <a href="#"><img src="./icons/header/cart.svg" alt="Cart"></a>
                         <div class="menu__count">2</div>
                     </div>
                 </div>
@@ -251,7 +252,17 @@
                         <input class="form__item" type="text" name="name" required placeholder="Name">
                         <input class="form__item" type="email" name="email" required placeholder="Email">
                         <input class="form__item" type="number" name="phone" required placeholder="Phone Number">
-                        <input class="form__item" type="text" name="service" placeholder="Select Service">
+                        <div class="form__item">
+                            <select class="form__item" name="service">
+                                <option value="" selected>Select Service</option>
+                                <option value="petBoarding">Pet Boarding (No Cages)</option>
+                                <option value="petDaycare">Pet Daycare</option>
+                                <option value="petSpa">Pet Day Spa & Grooming</option>
+                                <option value="mealPlans">Custom Meal Plans</option>
+                                <option value="petTraining">Pet Training</option>
+                                <option value="store">Shop Our Store</option>
+                            </select>
+                        </div> 
                     </div>
                     <textarea class="form__item" id="textarea" name="textarea" placeholder="Tell us about your puppers include his/her name"></textarea>
                     <button class="button form__button">Make an Appointment</button>
@@ -510,7 +521,9 @@
         </div>
         
     </footer>
-
+<!--     
+    <script src="./js/bundle.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
