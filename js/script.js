@@ -1,9 +1,19 @@
 window.addEventListener('DOMContentLoaded', () =>{
-
+    //select
+    const element = document.querySelector('select');
+    const choices = new Choices(element);
+    element.addEventListener('change', () => {
+        const option = document.querySelector('[aria-selected = "true"]');
+        if(option.innerText.length >= 21 && document.documentElement.clientWidth > 578) {
+            option.innerText = option.innerText.slice(0, 20) + '...'; 
+            console.log(option.innerText);
+        } 
+    });
+    
     //form
-    const btn = document.querySelector('.form__button');
+    const form = document.querySelector('.form');
     const input = document.querySelectorAll('.form__item');
-    btn.addEventListener('click', (e) => {
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
         input.forEach(item => {
             item.value = '';
@@ -49,16 +59,18 @@ window.addEventListener('DOMContentLoaded', () =>{
     //Timer
     const timer = document.querySelector('.appointment__count');
     timer.innerHTML = 0;
-    console.dir(timer);
-    
+
     function getTime() {
         if (window.pageYOffset + document.documentElement.clientHeight >= timer.offsetTop + timer.offsetHeight) {
-            const interval =setInterval(function() {
+            const interval = setInterval(function() {
                 Number(timer.innerHTML++);
-            }, 1000 );
+                if (timer.innerHTML >= 200) {
+                    clearInterval(interval);
+                    timer.innerHTML = `200+`;
+                }
+            }, 10);
             window.removeEventListener('scroll', getTime);
         }
     }
     window.addEventListener('scroll', getTime);
 });
-    
