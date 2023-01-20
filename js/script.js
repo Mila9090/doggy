@@ -2,11 +2,11 @@ window.addEventListener('DOMContentLoaded', () =>{
     //select
     const element = document.querySelector('select');
     const choices = new Choices(element);
+
     element.addEventListener('change', () => {
         const option = document.querySelector('[aria-selected = "true"]');
         if(option.innerText.length >= 21 && document.documentElement.clientWidth > 578) {
             option.innerText = option.innerText.slice(0, 20) + '...'; 
-            console.log(option.innerText);
         } 
     });
     
@@ -76,3 +76,4 @@ window.addEventListener('DOMContentLoaded', () =>{
     }
     window.addEventListener('scroll', getTime);
 });
+    
