@@ -14,7 +14,9 @@ window.addEventListener('DOMContentLoaded', () =>{
     const form = document.querySelector('.form');
     const input = document.querySelectorAll('.form__item');
     form.addEventListener('submit', (e) => {
+        const option = document.querySelector('[aria-selected = "true"]');
         e.preventDefault();
+        option.innerText = "Select service";
         input.forEach(item => {
             item.value = '';
         });
