@@ -99,6 +99,9 @@
             padding: 100px 75px 0;
         }
     }
+    .video__wrapper {
+        left: 50%;
+    }
 }
 
 @media (max-width: 969px) {
@@ -197,6 +200,16 @@
     }
     
 }
+
+@media (max-width: 850px) {
+    .video {
+        background: url(../img/video/bg.png) 84%/cover no-repeat;
+        &__wrapper {
+            left: 36%;
+        }
+    }
+}
+
 @media (max-width: 731px) {
     .gallery {
         margin-bottom: 30px;
@@ -222,6 +235,7 @@
         }
     }
     .video{
+        background: url(../img/video/bg.png) 80% center/cover no-repeat;
         &__wrapper{
             left: 0;
             right: 0;
